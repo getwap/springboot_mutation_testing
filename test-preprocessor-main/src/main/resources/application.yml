@@ -1,0 +1,18 @@
+
+
+project:
+  upload_dir: ${HOME}/mutation-processing
+  encoding: UTF-8
+  surefire_version: "2.22.2"
+  failsafe_version: "2.22.2"
+  jacoco_version: "0.8.8"
+  pitest:
+    version: "1.4.9"
+    junit_version: "0.15"
+    profile_version: "1.4.9"
+    threads: "1"
+    repository: "https://jarcasting.com/artifacts/org.pitest/pitest-junit5-plugin/"
+#  pitest_version: "1.4.9"
+#  pitest_junit_version: "0.15"
+#  pitest_profile_version: "1.4.9"
+#  pitest_threads: "1"

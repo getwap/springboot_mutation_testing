@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submissions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+
+    <a class="btn btn-success" role="button" aria-disabled="true" th:href="@{/submissions/new}">Submit new</a>
+
+    <h3>My submissions</h3>
+
+    <p th:text="${message}" th:if="${message ne null}" class="alert alert-success" role="alert"></p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">project id</th>
+                <th scope="col">Date</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Project 1</td>
+                <td>June, 16 2022</td>
+                <td>
+                    <button type="button" class="btn btn-primary">View feedback</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Project 2</td>
+                <td>June, 15 2022</td>
+                <td>
+                    <button type="button" class="btn btn-primary">View feedback</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Project 3</td>
+                <td>June, 14 2022</td>
+                <td>
+                    <button type="button" class="btn btn-primary">View feedback</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
